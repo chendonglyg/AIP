@@ -1,0 +1,21 @@
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.exe
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.xml
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.pdb
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.exe
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.pdb
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.xml
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.vbprojResolveAssemblyReference.cache
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Form1.resources
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Resources.resources
+D:\下载\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.vbproj.GenerateResource.Cache
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.exe
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.xml
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.pdb
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.exe
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.pdb
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.xml
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.vbprojResolveAssemblyReference.cache
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Form1.resources
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Resources.resources
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.WinWordControl.resources
+d:\DESKTOP\AIP System\WinForm_Word\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.vbproj.GenerateResource.Cache

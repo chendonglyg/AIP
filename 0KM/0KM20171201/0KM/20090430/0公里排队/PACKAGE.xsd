@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PACKAGE" targetNamespace="http://tempuri.org/PACKAGE.xsd" xmlns:mstns="http://tempuri.org/PACKAGE.xsd" xmlns="http://tempuri.org/PACKAGE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="FORLIHUODAN_TEMP" GeneratorFunctionsComponentClassName="FORLIHUODAN_TEMP" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="FORLIHUODAN_TEMP" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FORPACKAGE_XBZPD_LIHUODAN_TEMP" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FORPACKAGE_XBZPD_LIHUODAN_TEMP (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._Somesoft.My.MySettings.GlobalReference.Default.FORPACKAGE_XBZPD_LIHUODAN_TEMP" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FORPACKAGE_XBZPD_LIHUODAN_TEMP (MySettings)" DbObjectName="Package.dbo.TRUCK_QUEUE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from TRUCK_QUEUE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="客户名称" DataSetColumn="客户名称" />
+              <Mapping SourceColumn="货物名称" DataSetColumn="货物名称" />
+              <Mapping SourceColumn="提单号" DataSetColumn="提单号" />
+              <Mapping SourceColumn="车号" DataSetColumn="车号" />
+              <Mapping SourceColumn="电话号码" DataSetColumn="电话号码" />
+              <Mapping SourceColumn="可登记" DataSetColumn="可登记" />
+              <Mapping SourceColumn="已登记" DataSetColumn="已登记" />
+              <Mapping SourceColumn="可进厂" DataSetColumn="可进厂" />
+              <Mapping SourceColumn="已完成" DataSetColumn="已完成" />
+              <Mapping SourceColumn="已退回" DataSetColumn="已退回" />
+              <Mapping SourceColumn="推送时间" DataSetColumn="推送时间" />
+              <Mapping SourceColumn="登记时间" DataSetColumn="登记时间" />
+              <Mapping SourceColumn="进厂时间" DataSetColumn="进厂时间" />
+              <Mapping SourceColumn="完成时间" DataSetColumn="完成时间" />
+              <Mapping SourceColumn="备注" DataSetColumn="备注" />
+              <Mapping SourceColumn="退回时间" DataSetColumn="退回时间" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TRUCK_QUEUE_IMAGETableAdapter" GeneratorDataComponentClassName="TRUCK_QUEUE_IMAGETableAdapter" Name="TRUCK_QUEUE_IMAGE" UserDataComponentName="TRUCK_QUEUE_IMAGETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FORPACKAGE_XBZPD_LIHUODAN_TEMP (MySettings)" DbObjectName="Package.dbo.TRUCK_QUEUE_IMAGE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [TRUCK_QUEUE_IMAGE] WHERE (([id] = @Original_id) AND ((@IsNull_提单号 = 1 AND [提单号] IS NULL) OR ([提单号] = @Original_提单号)) AND ((@IsNull_车号 = 1 AND [车号] IS NULL) OR ([车号] = @Original_车号)) AND ((@IsNull_入场日期 = 1 AND [入场日期] IS NULL) OR ([入场日期] = @Original_入场日期)) AND ((@IsNull_图1大小 = 1 AND [图1大小] IS NULL) OR ([图1大小] = @Original_图1大小)) AND ((@IsNull_图2大小 = 1 AND [图2大小] IS NULL) OR ([图2大小] = @Original_图2大小)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_提单号" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_提单号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_车号" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_车号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_入场日期" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_入场日期" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [TRUCK_QUEUE_IMAGE] ([提单号], [车号], [入场日期], [图像1], [图像2], [图1大小], [图2大小]) VALUES (@提单号, @车号, @入场日期, @图像1, @图像2, @图1大小, @图2大小);
+SELECT id, 提单号, 车号, 入场日期, 图像1, 图像2, 图1大小, 图2大小 FROM TRUCK_QUEUE_IMAGE WHERE (id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@提单号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@车号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@入场日期" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@图像1" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="图像1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@图像2" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="图像2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   TRUCK_QUEUE_IMAGE.*
+FROM      TRUCK_QUEUE_IMAGE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [TRUCK_QUEUE_IMAGE] SET [提单号] = @提单号, [车号] = @车号, [入场日期] = @入场日期, [图像1] = @图像1, [图像2] = @图像2, [图1大小] = @图1大小, [图2大小] = @图2大小 WHERE (([id] = @Original_id) AND ((@IsNull_提单号 = 1 AND [提单号] IS NULL) OR ([提单号] = @Original_提单号)) AND ((@IsNull_车号 = 1 AND [车号] IS NULL) OR ([车号] = @Original_车号)) AND ((@IsNull_入场日期 = 1 AND [入场日期] IS NULL) OR ([入场日期] = @Original_入场日期)) AND ((@IsNull_图1大小 = 1 AND [图1大小] IS NULL) OR ([图1大小] = @Original_图1大小)) AND ((@IsNull_图2大小 = 1 AND [图2大小] IS NULL) OR ([图2大小] = @Original_图2大小)));
+SELECT id, 提单号, 车号, 入场日期, 图像1, 图像2, 图1大小, 图2大小 FROM TRUCK_QUEUE_IMAGE WHERE (id = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@提单号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@车号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@入场日期" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@图像1" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="图像1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@图像2" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="图像2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_提单号" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_提单号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="提单号" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_车号" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_车号" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="车号" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_入场日期" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_入场日期" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="入场日期" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_图1大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图1大小" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_图2大小" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="图2大小" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="id" DataSourceName="Package.dbo.TRUCK_QUEUE_IMAGE" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="提单号" DataSetColumn="提单号" />
+              <Mapping SourceColumn="车号" DataSetColumn="车号" />
+              <Mapping SourceColumn="入场日期" DataSetColumn="入场日期" />
+              <Mapping SourceColumn="图像1" DataSetColumn="图像1" />
+              <Mapping SourceColumn="图像2" DataSetColumn="图像2" />
+              <Mapping SourceColumn="图1大小" DataSetColumn="图1大小" />
+              <Mapping SourceColumn="图2大小" DataSetColumn="图2大小" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PACKAGE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PACKAGE" msprop:Generator_UserDSName="PACKAGE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="客户名称" msprop:Generator_ColumnVarNameInTable="column客户名称" msprop:Generator_ColumnPropNameInRow="客户名称" msprop:Generator_ColumnPropNameInTable="客户名称Column" msprop:Generator_UserColumnName="客户名称" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="货物名称" msprop:Generator_ColumnVarNameInTable="column货物名称" msprop:Generator_ColumnPropNameInRow="货物名称" msprop:Generator_ColumnPropNameInTable="货物名称Column" msprop:Generator_UserColumnName="货物名称" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="提单号" msprop:Generator_ColumnVarNameInTable="column提单号" msprop:Generator_ColumnPropNameInRow="提单号" msprop:Generator_ColumnPropNameInTable="提单号Column" msprop:Generator_UserColumnName="提单号" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="车号" msprop:Generator_ColumnVarNameInTable="column车号" msprop:Generator_ColumnPropNameInRow="车号" msprop:Generator_ColumnPropNameInTable="车号Column" msprop:Generator_UserColumnName="车号" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="电话号码" msprop:Generator_ColumnVarNameInTable="column电话号码" msprop:Generator_ColumnPropNameInRow="电话号码" msprop:Generator_ColumnPropNameInTable="电话号码Column" msprop:Generator_UserColumnName="电话号码" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="可登记" msprop:Generator_ColumnVarNameInTable="column可登记" msprop:Generator_ColumnPropNameInRow="可登记" msprop:Generator_ColumnPropNameInTable="可登记Column" msprop:Generator_UserColumnName="可登记" type="xs:boolean" minOccurs="0" />
+              <xs:element name="已登记" msprop:Generator_ColumnVarNameInTable="column已登记" msprop:Generator_ColumnPropNameInRow="已登记" msprop:Generator_ColumnPropNameInTable="已登记Column" msprop:Generator_UserColumnName="已登记" type="xs:boolean" minOccurs="0" />
+              <xs:element name="可进厂" msprop:Generator_ColumnVarNameInTable="column可进厂" msprop:Generator_ColumnPropNameInRow="可进厂" msprop:Generator_ColumnPropNameInTable="可进厂Column" msprop:Generator_UserColumnName="可进厂" type="xs:boolean" minOccurs="0" />
+              <xs:element name="已完成" msprop:Generator_ColumnVarNameInTable="column已完成" msprop:Generator_ColumnPropNameInRow="已完成" msprop:Generator_ColumnPropNameInTable="已完成Column" msprop:Generator_UserColumnName="已完成" type="xs:boolean" minOccurs="0" />
+              <xs:element name="已退回" msprop:Generator_ColumnVarNameInTable="column已退回" msprop:Generator_ColumnPropNameInRow="已退回" msprop:Generator_ColumnPropNameInTable="已退回Column" msprop:Generator_UserColumnName="已退回" type="xs:boolean" minOccurs="0" />
+              <xs:element name="推送时间" msprop:Generator_ColumnVarNameInTable="column推送时间" msprop:Generator_ColumnPropNameInRow="推送时间" msprop:Generator_ColumnPropNameInTable="推送时间Column" msprop:Generator_UserColumnName="推送时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="登记时间" msprop:Generator_ColumnVarNameInTable="column登记时间" msprop:Generator_ColumnPropNameInRow="登记时间" msprop:Generator_ColumnPropNameInTable="登记时间Column" msprop:Generator_UserColumnName="登记时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="进厂时间" msprop:Generator_ColumnVarNameInTable="column进厂时间" msprop:Generator_ColumnPropNameInRow="进厂时间" msprop:Generator_ColumnPropNameInTable="进厂时间Column" msprop:Generator_UserColumnName="进厂时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="完成时间" msprop:Generator_ColumnVarNameInTable="column完成时间" msprop:Generator_ColumnPropNameInRow="完成时间" msprop:Generator_ColumnPropNameInTable="完成时间Column" msprop:Generator_UserColumnName="完成时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="备注" msprop:Generator_ColumnVarNameInTable="column备注" msprop:Generator_ColumnPropNameInRow="备注" msprop:Generator_ColumnPropNameInTable="备注Column" msprop:Generator_UserColumnName="备注" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="退回时间" msprop:Generator_ColumnVarNameInTable="column退回时间" msprop:Generator_ColumnPropNameInRow="退回时间" msprop:Generator_ColumnPropNameInTable="退回时间Column" msprop:Generator_UserColumnName="退回时间" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TRUCK_QUEUE_IMAGE" msprop:Generator_TableClassName="TRUCK_QUEUE_IMAGEDataTable" msprop:Generator_TableVarName="tableTRUCK_QUEUE_IMAGE" msprop:Generator_TablePropName="TRUCK_QUEUE_IMAGE" msprop:Generator_RowDeletingName="TRUCK_QUEUE_IMAGERowDeleting" msprop:Generator_RowChangingName="TRUCK_QUEUE_IMAGERowChanging" msprop:Generator_RowEvHandlerName="TRUCK_QUEUE_IMAGERowChangeEventHandler" msprop:Generator_RowDeletedName="TRUCK_QUEUE_IMAGERowDeleted" msprop:Generator_UserTableName="TRUCK_QUEUE_IMAGE" msprop:Generator_RowChangedName="TRUCK_QUEUE_IMAGERowChanged" msprop:Generator_RowEvArgName="TRUCK_QUEUE_IMAGERowChangeEvent" msprop:Generator_RowClassName="TRUCK_QUEUE_IMAGERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="提单号" msprop:Generator_ColumnVarNameInTable="column提单号" msprop:Generator_ColumnPropNameInRow="提单号" msprop:Generator_ColumnPropNameInTable="提单号Column" msprop:Generator_UserColumnName="提单号" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="车号" msprop:Generator_ColumnVarNameInTable="column车号" msprop:Generator_ColumnPropNameInRow="车号" msprop:Generator_ColumnPropNameInTable="车号Column" msprop:Generator_UserColumnName="车号" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="入场日期" msprop:Generator_ColumnVarNameInTable="column入场日期" msprop:Generator_ColumnPropNameInRow="入场日期" msprop:Generator_ColumnPropNameInTable="入场日期Column" msprop:Generator_UserColumnName="入场日期" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="图像1" msprop:Generator_ColumnVarNameInTable="column图像1" msprop:Generator_ColumnPropNameInRow="图像1" msprop:Generator_ColumnPropNameInTable="图像1Column" msprop:Generator_UserColumnName="图像1" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="图像2" msprop:Generator_ColumnVarNameInTable="column图像2" msprop:Generator_ColumnPropNameInRow="图像2" msprop:Generator_ColumnPropNameInTable="图像2Column" msprop:Generator_UserColumnName="图像2" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="图1大小" msprop:Generator_ColumnVarNameInTable="column图1大小" msprop:Generator_ColumnPropNameInRow="图1大小" msprop:Generator_ColumnPropNameInTable="图1大小Column" msprop:Generator_UserColumnName="图1大小" type="xs:int" minOccurs="0" />
+              <xs:element name="图2大小" msprop:Generator_ColumnVarNameInTable="column图2大小" msprop:Generator_ColumnPropNameInRow="图2大小" msprop:Generator_ColumnPropNameInTable="图2大小Column" msprop:Generator_UserColumnName="图2大小" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TRUCK_QUEUE_IMAGE" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

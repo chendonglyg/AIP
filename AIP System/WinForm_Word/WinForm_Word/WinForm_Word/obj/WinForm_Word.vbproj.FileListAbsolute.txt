@@ -1,0 +1,10 @@
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.exe
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.pdb
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\bin\Debug\WinForm_Word.xml
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\ResolveAssemblyReference.cache
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Resources.resources
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.vbproj.GenerateResource.Cache
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.exe
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.xml
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.pdb
+F:\软件开发\软件源码\医院收费管理系统\参考资料\WinForm_Word\WinForm_Word\obj\Debug\WinForm_Word.Form1.resources
