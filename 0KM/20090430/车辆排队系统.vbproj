@@ -39,7 +39,7 @@
     <PublisherName>ChenDong</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>Default.htm</WebPage>
-    <ApplicationRevision>1115</ApplicationRevision>
+    <ApplicationRevision>1116</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -89,6 +89,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -267,12 +268,17 @@
     <Compile Include="0公里排队\MessageSend.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Service References\lygport_outside\Reference.vb">
+    <Compile Include="Service References\LOADTRUCKLIST\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\sendmessage\Reference.vb">
+    <Compile Include="Service References\LYGPORT_OUTSIDE\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SendMessage\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -410,9 +416,10 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="Service References\lygport_outside\YhService.wsdl" />
-    <None Include="Service References\sendmessage\ICTEnterprises1.wsdl" />
-    <None Include="Service References\sendmessage\ICTEnterprises2.wsdl" />
+    <None Include="Service References\LOADTRUCKLIST\TEST.wsdl" />
+    <None Include="Service References\LYGPORT_OUTSIDE\YhService.wsdl" />
+    <None Include="Service References\SendMessage\ICTEnterprises1.wsdl" />
+    <None Include="Service References\SendMessage\ICTEnterprises2.wsdl" />
     <None Include="车辆排队系统_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -706,38 +713,39 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\lygport_outside\" />
-    <WCFMetadataStorage Include="Service References\sendmessage\" />
+    <WCFMetadataStorage Include="Service References\LOADTRUCKLIST\" />
+    <WCFMetadataStorage Include="Service References\LYGPORT_OUTSIDE\" />
+    <WCFMetadataStorage Include="Service References\SendMessage\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\sendmessage\configuration91.svcinfo" />
+    <None Include="Service References\SendMessage\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\sendmessage\configuration.svcinfo" />
+    <None Include="Service References\SendMessage\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\sendmessage\Reference.svcmap">
+    <None Include="Service References\SendMessage\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\lygport_outside\YhService.disco" />
+    <None Include="Service References\LYGPORT_OUTSIDE\YhService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\lygport_outside\configuration91.svcinfo" />
+    <None Include="Service References\LYGPORT_OUTSIDE\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\lygport_outside\configuration.svcinfo" />
+    <None Include="Service References\LYGPORT_OUTSIDE\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\lygport_outside\Reference.svcmap">
+    <None Include="Service References\LYGPORT_OUTSIDE\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\sendmessage\ICTEnterprises1.disco" />
+    <None Include="Service References\SendMessage\ICTEnterprises1.disco" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -751,6 +759,21 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LOADTRUCKLIST\TEST.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LOADTRUCKLIST\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LOADTRUCKLIST\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LOADTRUCKLIST\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

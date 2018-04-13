@@ -13,10 +13,10 @@ Option Explicit On
 
 Imports System.Data
 
-Namespace sendmessage
+Namespace SendMessage
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="sendmessage.ICTEnterprisesSoap")>  _
+     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="SendMessage.ICTEnterprisesSoap")>  _
     Public Interface ICTEnterprisesSoap
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/HelloWorld", ReplyAction:="*"),  _
@@ -42,14 +42,14 @@ Namespace sendmessage
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Public Interface ICTEnterprisesSoapChannel
-        Inherits sendmessage.ICTEnterprisesSoap, System.ServiceModel.IClientChannel
+        Inherits SendMessage.ICTEnterprisesSoap, System.ServiceModel.IClientChannel
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Partial Public Class CTEnterprisesSoapClient
-        Inherits System.ServiceModel.ClientBase(Of sendmessage.ICTEnterprisesSoap)
-        Implements sendmessage.ICTEnterprisesSoap
+        Inherits System.ServiceModel.ClientBase(Of SendMessage.ICTEnterprisesSoap)
+        Implements SendMessage.ICTEnterprisesSoap
         
         Public Sub New()
             MyBase.New
@@ -71,23 +71,23 @@ Namespace sendmessage
             MyBase.New(binding, remoteAddress)
         End Sub
         
-        Public Function HelloWorld() As String Implements sendmessage.ICTEnterprisesSoap.HelloWorld
+        Public Function HelloWorld() As String Implements SendMessage.ICTEnterprisesSoap.HelloWorld
             Return MyBase.Channel.HelloWorld
         End Function
         
-        Public Sub sendMessageMulti(ByVal ds As System.Data.DataSet, ByVal sendPassword As String) Implements sendmessage.ICTEnterprisesSoap.sendMessageMulti
+        Public Sub sendMessageMulti(ByVal ds As System.Data.DataSet, ByVal sendPassword As String) Implements SendMessage.ICTEnterprisesSoap.sendMessageMulti
             MyBase.Channel.sendMessageMulti(ds, sendPassword)
         End Sub
         
-        Public Sub sendOneMessage(ByVal receiveNumble As String, ByVal sendContent As String, ByVal sendUser As String, ByVal sendPassword As String) Implements sendmessage.ICTEnterprisesSoap.sendOneMessage
+        Public Sub sendOneMessage(ByVal receiveNumble As String, ByVal sendContent As String, ByVal sendUser As String, ByVal sendPassword As String) Implements SendMessage.ICTEnterprisesSoap.sendOneMessage
             MyBase.Channel.sendOneMessage(receiveNumble, sendContent, sendUser, sendPassword)
         End Sub
         
-        Public Sub sendInReadyToSend() Implements sendmessage.ICTEnterprisesSoap.sendInReadyToSend
+        Public Sub sendInReadyToSend() Implements SendMessage.ICTEnterprisesSoap.sendInReadyToSend
             MyBase.Channel.sendInReadyToSend
         End Sub
         
-        Public Function getDateTime() As String Implements sendmessage.ICTEnterprisesSoap.getDateTime
+        Public Function getDateTime() As String Implements SendMessage.ICTEnterprisesSoap.getDateTime
             Return MyBase.Channel.getDateTime
         End Function
     End Class

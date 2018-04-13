@@ -3,8 +3,8 @@
     Dim objdataview As New DataView
     Dim objdataadapter As New SqlClient.SqlDataAdapter
     Dim OK43, Tree_No As Integer
-    Dim sendsomething As New sendmessage.CTEnterprisesSoapClient
-    Dim VehicleinPark As New lygport_outside.Service1SoapClient
+    Dim sendsomething As New SendMessage.CTEnterprisesSoapClient
+    Dim VehicleinPark As New LYGPORT_OUTSIDE.Service1SoapClient
     Dim objconnection = New SqlClient.SqlConnection("Data Source= " & Trim("222.189.4.146") & "," & Trim("1433") & ";Initial Catalog = package;User ID=" & "sa" & "; Password=" & "chen dong")
 
     Dim veh_return, in_date, stre, stre_2, stre_3, phone_no As String
@@ -417,7 +417,7 @@
 
                     'If (Len(IDID.Text) > 0) Then '启用它即可任何车辆放行，无需排队
 
-                    If Len(drOperate("out_time").ToString) = 0 Then
+                    If Len(drOperate("out_time").ToString) = 0 Then '说明车还在停车场，没有乱跑
 
 
 
@@ -437,7 +437,7 @@
 
                         showall()
                         clearall()
-                    Else
+                    Else 'outtime字段带值了，显然车跑了
                         Dim objcommandpassword As New SqlClient.SqlCommand
                         objcommandpassword.Connection = objconnection
                         objcommandpassword.CommandText = "Update TRUCK_QUEUE set 可登记=1,已登记=0,可进厂=0,已退回=1,退回时间=@退回时间,备注=@备注 where 已登记=1 and 车号='" & Trim(chehao.Text) & "'"
@@ -475,7 +475,7 @@
                 '    MessageBox.Show(ex.Message)
                 'End Try
 
-            Else
+            Else  '3天内都没数据，太假了
 
                 Dim objcommandpassword As New SqlClient.SqlCommand
                 objcommandpassword.Connection = objconnection

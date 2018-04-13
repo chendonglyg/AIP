@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="车队排队管理.exe" version="2.0.0.1114" publicKeyToken="a1325a30a84d6623" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="车队排队管理.exe" version="2.0.0.1115" publicKeyToken="a1325a30a84d6623" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="车队排队管理" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -297,14 +297,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.AcroPDFLib.dll" size="11776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.AcroPDFLib.dll" size="12800">
       <assemblyIdentity name="Interop.AcroPDFLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>VZvU3logyqBk//yI1JDvKfDiUho=</dsig:DigestValue>
+        <dsig:DigestValue>TkxTTy5FK7+dXfRoH3hmvEmYnIk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -345,14 +345,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="车队排队管理.exe" size="1125376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="车队排队管理.exe" size="1128448">
       <assemblyIdentity name="车队排队管理" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>3ac3aON7Hqtm0Idlh19w0+U4Hc0=</dsig:DigestValue>
+        <dsig:DigestValue>RxS9EZa0uqUMZijSD09YEJw9iYA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -365,13 +365,13 @@
       <dsig:DigestValue>kK7cP4A8OCZ1FRkCyMv1wbDwi/o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="车队排队管理.exe.config" size="3838">
+  <file name="车队排队管理.exe.config" size="4219">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Wivt+GuKcWlCsL+L+F/zacZ6gwQ=</dsig:DigestValue>
+      <dsig:DigestValue>+Ep8QmsWLChdUGNziO9fu+OeXjg=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
@@ -388,4 +388,4 @@
       <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=CHENDONGLYG\CHENDONG" issuerKeyHash="b1d818e44633e92061a55bf4bd7d6863892af99a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>7n0TJLR9h0Z0jFn31HXxF8+vBg8=</DigestValue></Reference></SignedInfo><SignatureValue>Et3dmvW0eevXcutGtoBJsnIzA0sgyT7kG7PZou1lwsiEw5+nsjgvH4T7hF7BKbgb5oSBKwekL73M6G4xVyF5L2EK49WZGl5B8UDOyJCC32vyWXqbz9EFcbP10iNC83AcyrDnJeO/l0q7k1McCPcXbnqtxrGd3MT9DiEP199kA5o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0f06afcf17f175d4f7598c7446877db424137dee" Description="" Url=""><as:assemblyIdentity name="车队排队管理.exe" version="2.0.0.1114" publicKeyToken="a1325a30a84d6623" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CHENDONGLYG\CHENDONG</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>4Jlrb5IevtDZt+mHh+VgSAJGF/s=</DigestValue></Reference></SignedInfo><SignatureValue>Hg5kiVvJm1J6ZsmlXpZxBXSAzn464jxn6/BuBd9cpgWEN303i6f7i9fk6QBzjX+FR1xRtZ9Ns8aPusxM9wCWHQ2rqedItBUFpxKiDo5/Xox8IDQalUScvyS63b90xT73+jBIYbsWnXIUG/7pIHSWfcz/Fw+K5JSuNMc7mJlPivQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQWjBghYdmoL1I5mEJYEKwGzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAQwBIAEUATgBEAE8ATgBHAEwAWQBHAFwAQwBIAEUATgBEAE8ATgBHMB4XDTE4MDMyMDAxNDUxMVoXDTE5MDMyMDA3NDUxMVowMzExMC8GA1UEAx4oAEMASABFAE4ARABPAE4ARwBMAFkARwBcAEMASABFAE4ARABPAE4ARzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3UCAwEAATANBgkqhkiG9w0BAQUFAAOBgQACQEfgo15c3ElLCcOsym8lz1dKk3ju1XRW/+DYjX5E3xf0YmTBEppM3bJfxxkAH0IxeB26pXQftCpS8xqQBf5WmtLbh9smmpWPhqfC6XuuwKbvu/nZ9YWmnUTHF02tAP2G3LKPoa0YJOMU0PcGdC2lKI5bQHxK4sUOWfXXET5jEw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=CHENDONGLYG\CHENDONG" issuerKeyHash="b1d818e44633e92061a55bf4bd7d6863892af99a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>jfcAaagSof/6pifdeaCf5vjncDY=</DigestValue></Reference></SignedInfo><SignatureValue>L2VR2seTE1KMOuxy70N/UXsA3b0PEBohsPCxm9JfLuxVbTy3/QoIuPfVpZ4HGG68JgFaIlScd32XI0N8co1IqNhsptjh040nQwzTT7ji4BHwoB29I6EZ+MxLoT7ksWBy6SuaTU03Z9Kf7vnjpL+DSvquK3FM/krEmWnH4h1/mws=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3670e7f8e69fa079dd27a6faffa112a86900f78d" Description="" Url=""><as:assemblyIdentity name="车队排队管理.exe" version="2.0.0.1115" publicKeyToken="a1325a30a84d6623" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CHENDONGLYG\CHENDONG</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XET15g4GaPp9+tP2JzrEh1PMp8c=</DigestValue></Reference></SignedInfo><SignatureValue>e98LDT2X/cUQ+PZK5802f3uOQn5rNRDOsDn2z2H1SzoGPN50qKou2guk9nE85zRRUVl02D4O8n73mUpac6OJQBgGzjcyl87Ugo+vuPKuumJh6nav8e6GAHm+SINpk7Il79lC4PR0D9e0F0QGCxVsa4QJwVwhQHu4VD+0lsxxam4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQWjBghYdmoL1I5mEJYEKwGzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAQwBIAEUATgBEAE8ATgBHAEwAWQBHAFwAQwBIAEUATgBEAE8ATgBHMB4XDTE4MDMyMDAxNDUxMVoXDTE5MDMyMDA3NDUxMVowMzExMC8GA1UEAx4oAEMASABFAE4ARABPAE4ARwBMAFkARwBcAEMASABFAE4ARABPAE4ARzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnW8WBYL75UBEPdNkRBe8ydQkLmS7dOdQBbbNaq+fUQYdzoKNnSxGEpj1N4igARs99tdApA3sFYRuaxMmLfNTTfxmvI5MeDKBTCEzEBLKkxMTyzg4mtjoyZQHUCNIp3F8bzM1q5LZ+oB0PmQxjlmlktrJYAHcM7HugjPOOqaBC3UCAwEAATANBgkqhkiG9w0BAQUFAAOBgQACQEfgo15c3ElLCcOsym8lz1dKk3ju1XRW/+DYjX5E3xf0YmTBEppM3bJfxxkAH0IxeB26pXQftCpS8xqQBf5WmtLbh9smmpWPhqfC6XuuwKbvu/nZ9YWmnUTHF02tAP2G3LKPoa0YJOMU0PcGdC2lKI5bQHxK4sUOWfXXET5jEw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

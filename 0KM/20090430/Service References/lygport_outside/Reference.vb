@@ -13,10 +13,10 @@ Option Explicit On
 
 Imports System.Data
 
-Namespace lygport_outside
+Namespace LYGPORT_OUTSIDE
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="lygport_outside.Service1Soap")>  _
+     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="LYGPORT_OUTSIDE.Service1Soap")>  _
     Public Interface Service1Soap
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/HelloWorld", ReplyAction:="*"),  _
@@ -26,7 +26,7 @@ Namespace lygport_outside
         'CODEGEN: 参数“PictureGate”需要其他方案信息，使用参数模式无法捕获这些信息。特定特性为“System.Xml.Serialization.XmlElementAttribute”。
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/GetInRecord", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
-        Function GetInRecord(ByVal request As lygport_outside.GetInRecordRequest) As <System.ServiceModel.MessageParameterAttribute(Name:="veh_return")> lygport_outside.GetInRecordResponse
+        Function GetInRecord(ByVal request As LYGPORT_OUTSIDE.GetInRecordRequest) As <System.ServiceModel.MessageParameterAttribute(Name:="veh_return")> LYGPORT_OUTSIDE.GetInRecordResponse
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/InsertConsignVehicle", ReplyAction:="*"),  _
          System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults:=true)>  _
@@ -115,14 +115,14 @@ Namespace lygport_outside
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Public Interface Service1SoapChannel
-        Inherits lygport_outside.Service1Soap, System.ServiceModel.IClientChannel
+        Inherits LYGPORT_OUTSIDE.Service1Soap, System.ServiceModel.IClientChannel
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Partial Public Class Service1SoapClient
-        Inherits System.ServiceModel.ClientBase(Of lygport_outside.Service1Soap)
-        Implements lygport_outside.Service1Soap
+        Inherits System.ServiceModel.ClientBase(Of LYGPORT_OUTSIDE.Service1Soap)
+        Implements LYGPORT_OUTSIDE.Service1Soap
         
         Public Sub New()
             MyBase.New
@@ -144,21 +144,21 @@ Namespace lygport_outside
             MyBase.New(binding, remoteAddress)
         End Sub
         
-        Public Function HelloWorld() As String Implements lygport_outside.Service1Soap.HelloWorld
+        Public Function HelloWorld() As String Implements LYGPORT_OUTSIDE.Service1Soap.HelloWorld
             Return MyBase.Channel.HelloWorld
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function lygport_outside_Service1Soap_GetInRecord(ByVal request As lygport_outside.GetInRecordRequest) As lygport_outside.GetInRecordResponse Implements lygport_outside.Service1Soap.GetInRecord
+        Function LYGPORT_OUTSIDE_Service1Soap_GetInRecord(ByVal request As LYGPORT_OUTSIDE.GetInRecordRequest) As LYGPORT_OUTSIDE.GetInRecordResponse Implements LYGPORT_OUTSIDE.Service1Soap.GetInRecord
             Return MyBase.Channel.GetInRecord(request)
         End Function
         
         Public Function GetInRecord(ByVal cryptogram As String, ByVal vehicle As String, ByVal externo As String, <System.Runtime.InteropServices.OutAttribute()> ByRef in_date As String, <System.Runtime.InteropServices.OutAttribute()> ByRef PictureGate() As Byte, <System.Runtime.InteropServices.OutAttribute()> ByRef PictureVehicle() As Byte, <System.Runtime.InteropServices.OutAttribute()> ByRef strErr As String, <System.Runtime.InteropServices.OutAttribute()> ByRef phone_no As String) As String
-            Dim inValue As lygport_outside.GetInRecordRequest = New lygport_outside.GetInRecordRequest()
+            Dim inValue As LYGPORT_OUTSIDE.GetInRecordRequest = New LYGPORT_OUTSIDE.GetInRecordRequest()
             inValue.cryptogram = cryptogram
             inValue.vehicle = vehicle
             inValue.externo = externo
-            Dim retVal As lygport_outside.GetInRecordResponse = CType(Me,lygport_outside.Service1Soap).GetInRecord(inValue)
+            Dim retVal As LYGPORT_OUTSIDE.GetInRecordResponse = CType(Me,LYGPORT_OUTSIDE.Service1Soap).GetInRecord(inValue)
             in_date = retVal.in_date
             PictureGate = retVal.PictureGate
             PictureVehicle = retVal.PictureVehicle
@@ -167,19 +167,19 @@ Namespace lygport_outside
             Return retVal.veh_return
         End Function
         
-        Public Function InsertConsignVehicle(ByVal cryptogram As String, ByVal vehicle As String, ByVal phone_no As String) As String Implements lygport_outside.Service1Soap.InsertConsignVehicle
+        Public Function InsertConsignVehicle(ByVal cryptogram As String, ByVal vehicle As String, ByVal phone_no As String) As String Implements LYGPORT_OUTSIDE.Service1Soap.InsertConsignVehicle
             Return MyBase.Channel.InsertConsignVehicle(cryptogram, vehicle, phone_no)
         End Function
         
-        Public Function UpdateConsignVehicle(ByVal cryptogram As String, ByVal vehicle As String) As String Implements lygport_outside.Service1Soap.UpdateConsignVehicle
+        Public Function UpdateConsignVehicle(ByVal cryptogram As String, ByVal vehicle As String) As String Implements LYGPORT_OUTSIDE.Service1Soap.UpdateConsignVehicle
             Return MyBase.Channel.UpdateConsignVehicle(cryptogram, vehicle)
         End Function
         
-        Public Function VehicleInPark(ByVal cryptogram As String, ByVal vehicle As String) As String Implements lygport_outside.Service1Soap.VehicleInPark
+        Public Function VehicleInPark(ByVal cryptogram As String, ByVal vehicle As String) As String Implements LYGPORT_OUTSIDE.Service1Soap.VehicleInPark
             Return MyBase.Channel.VehicleInPark(cryptogram, vehicle)
         End Function
         
-        Public Function VehiclePark(<System.Runtime.InteropServices.OutAttribute()> ByRef dt As System.Data.DataTable, ByVal cryptogram As String, ByVal vehicle As String, ByVal sqldate As Integer) As String Implements lygport_outside.Service1Soap.VehiclePark
+        Public Function VehiclePark(<System.Runtime.InteropServices.OutAttribute()> ByRef dt As System.Data.DataTable, ByVal cryptogram As String, ByVal vehicle As String, ByVal sqldate As Integer) As String Implements LYGPORT_OUTSIDE.Service1Soap.VehiclePark
             Return MyBase.Channel.VehiclePark(dt, cryptogram, vehicle, sqldate)
         End Function
     End Class

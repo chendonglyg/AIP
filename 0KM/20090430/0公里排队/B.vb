@@ -220,6 +220,7 @@
                 objcommandpassword.ExecuteNonQuery()
                 objconnection.Close()
                 MessageBox.Show("登记完成！（如没有选择记录，将不会有任何改变)", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                sendsomething.sendOneMessage(Trim(dianhuahaoma.Text), "<<车辆登记完成提醒>>" & Trim(kehumingcheng.Text) & "," & Trim(pinming.Text) & ",提单量:" & Trim(shuliang.Text) & "吨," & Trim(chehao.Text) & "," & "已登记完成!", "益海贸易部", "fpiyx,LUGXH^7673bxgs.68423#$%##dwt")
 
                 '-------------------------------------------------------------------------------以上是登记，以下是报备-----------
 
@@ -256,7 +257,11 @@
         dengjiReserverd.Enabled = False
         dengji.Enabled = False
         kedengji.AllowUserToAddRows = False '消除最后一行
-
+        If private_data = "admin" Then
+            ReturnTOA.Enabled = True
+        Else
+            ReturnTOA.Enabled = False
+        End If
     End Sub
     Private Sub clearall()
         For Each c As Windows.Forms.Control In Me.jichuxinxi.Controls
@@ -651,7 +656,7 @@
                 objcommandpassword.ExecuteNonQuery()
                 objconnection.Close()
                 MessageBox.Show("预约车辆登记完成，可在调度放行且停车场工作人员配卡后进厂装货.", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                '  sendsomething.sendOneMessage(Trim(dianhuahaoma.Text), "<<预约车辆进厂装货提醒>>" & Trim(kehumingcheng.Text) & "," & Trim(pinming.Text) & ",提单量:" & Trim(shuliang.Text) & "吨," & Trim(chehao.Text) & "," & "可进厂装货!", "益海贸易部", "fpiyx,LUGXH^7673bxgs.68423#$%##dwt")
+                'sendsomething.sendOneMessage(Trim(dianhuahaoma.Text), "<<预约车辆进厂装货提醒>>" & Trim(kehumingcheng.Text) & "," & Trim(pinming.Text) & ",提单量:" & Trim(shuliang.Text) & "吨," & Trim(chehao.Text) & "," & "可进厂装货!", "益海贸易部", "fpiyx,LUGXH^7673bxgs.68423#$%##dwt")
 
                 '-------------------------------------------------------------------------------以上是登记，以下是报备-----------
 

@@ -80,6 +80,10 @@ Partial Class MAOYI
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.kedengji = New System.Windows.Forms.DataGridView()
         Me.box2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.sijiname = New System.Windows.Forms.TextBox()
+        Me.sijiID = New System.Windows.Forms.TextBox()
         Me.C1.SuspendLayout()
         Me.jichuxinxi.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -95,32 +99,32 @@ Partial Class MAOYI
         '
         Me.C1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.C1_1, Me.C1_2, Me.C1_3, Me.C1_4})
         Me.C1.Name = "C1"
-        Me.C1.Size = New System.Drawing.Size(153, 114)
+        Me.C1.Size = New System.Drawing.Size(125, 92)
         '
         'C1_1
         '
         Me.C1_1.Name = "C1_1"
-        Me.C1_1.Size = New System.Drawing.Size(152, 22)
+        Me.C1_1.Size = New System.Drawing.Size(124, 22)
         Me.C1_1.Text = "删除记录"
         '
         'C1_2
         '
         Me.C1_2.ForeColor = System.Drawing.Color.Red
         Me.C1_2.Name = "C1_2"
-        Me.C1_2.Size = New System.Drawing.Size(152, 22)
+        Me.C1_2.Size = New System.Drawing.Size(124, 22)
         Me.C1_2.Text = "强制登记"
         '
         'C1_3
         '
         Me.C1_3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.C1_3.Name = "C1_3"
-        Me.C1_3.Size = New System.Drawing.Size(152, 22)
+        Me.C1_3.Size = New System.Drawing.Size(124, 22)
         Me.C1_3.Text = "配卡通行"
         '
         'C1_4
         '
         Me.C1_4.Name = "C1_4"
-        Me.C1_4.Size = New System.Drawing.Size(152, 22)
+        Me.C1_4.Size = New System.Drawing.Size(124, 22)
         Me.C1_4.Text = "强制放行"
         '
         'jichuxinxi
@@ -269,6 +273,10 @@ Partial Class MAOYI
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.sijiname)
+        Me.GroupBox2.Controls.Add(Me.sijiID)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.zipaiche)
@@ -288,7 +296,7 @@ Partial Class MAOYI
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(15, 41)
+        Me.Label2.Location = New System.Drawing.Point(15, 25)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(32, 17)
@@ -299,7 +307,7 @@ Partial Class MAOYI
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 81)
+        Me.Label4.Location = New System.Drawing.Point(12, 50)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(56, 17)
@@ -312,7 +320,7 @@ Partial Class MAOYI
         Me.zipaiche.BackColor = System.Drawing.Color.Yellow
         Me.zipaiche.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.zipaiche.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.zipaiche.Location = New System.Drawing.Point(249, 38)
+        Me.zipaiche.Location = New System.Drawing.Point(246, 23)
         Me.zipaiche.Margin = New System.Windows.Forms.Padding(4)
         Me.zipaiche.Name = "zipaiche"
         Me.zipaiche.Size = New System.Drawing.Size(69, 22)
@@ -324,7 +332,7 @@ Partial Class MAOYI
         '
         Me.chehao.BackColor = System.Drawing.Color.Yellow
         Me.chehao.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.chehao.Location = New System.Drawing.Point(11, 38)
+        Me.chehao.Location = New System.Drawing.Point(11, 22)
         Me.chehao.Margin = New System.Windows.Forms.Padding(4)
         Me.chehao.Name = "chehao"
         Me.chehao.Size = New System.Drawing.Size(229, 23)
@@ -336,10 +344,10 @@ Partial Class MAOYI
         Me.dianhuahaoma.BackColor = System.Drawing.Color.Yellow
         Me.dianhuahaoma.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.dianhuahaoma.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.dianhuahaoma.Location = New System.Drawing.Point(11, 79)
+        Me.dianhuahaoma.Location = New System.Drawing.Point(11, 48)
         Me.dianhuahaoma.Margin = New System.Windows.Forms.Padding(4)
         Me.dianhuahaoma.Name = "dianhuahaoma"
-        Me.dianhuahaoma.Size = New System.Drawing.Size(230, 23)
+        Me.dianhuahaoma.Size = New System.Drawing.Size(229, 23)
         Me.dianhuahaoma.TabIndex = 158
         Me.dianhuahaoma.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -634,6 +642,51 @@ Partial Class MAOYI
         Me.box2.TabIndex = 185
         Me.box2.Text = "车辆状态显示"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(15, 76)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(56, 17)
+        Me.Label1.TabIndex = 169
+        Me.Label1.Text = "司机姓名"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.Location = New System.Drawing.Point(12, 100)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(68, 17)
+        Me.Label9.TabIndex = 170
+        Me.Label9.Text = "司机二代证"
+        '
+        'sijiname
+        '
+        Me.sijiname.BackColor = System.Drawing.Color.Yellow
+        Me.sijiname.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.sijiname.Location = New System.Drawing.Point(11, 73)
+        Me.sijiname.Margin = New System.Windows.Forms.Padding(4)
+        Me.sijiname.Name = "sijiname"
+        Me.sijiname.Size = New System.Drawing.Size(153, 23)
+        Me.sijiname.TabIndex = 171
+        Me.sijiname.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'sijiID
+        '
+        Me.sijiID.BackColor = System.Drawing.Color.Yellow
+        Me.sijiID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.sijiID.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.sijiID.Location = New System.Drawing.Point(11, 98)
+        Me.sijiID.Margin = New System.Windows.Forms.Padding(4)
+        Me.sijiID.Name = "sijiID"
+        Me.sijiID.Size = New System.Drawing.Size(229, 23)
+        Me.sijiID.TabIndex = 172
+        Me.sijiID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
         'MAOYI
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -718,4 +771,8 @@ Partial Class MAOYI
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents kedengji As System.Windows.Forms.DataGridView
     Friend WithEvents box2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents sijiname As System.Windows.Forms.TextBox
+    Friend WithEvents sijiID As System.Windows.Forms.TextBox
 End Class

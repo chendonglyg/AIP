@@ -32,21 +32,31 @@
 <startup><supportedRuntime version="v2.0.50727"/></startup><system.serviceModel>
         <bindings>
             <basicHttpBinding>
-                <binding name="ICTEnterprisesSoap"/>
-                <binding name="Service1Soap1" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
-                    <readerQuotas maxDepth="2147483647" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647"/>
+                <binding name="ICTEnterprisesSoap" />
+                <binding name="Service1Soap1" maxBufferPoolSize="2147483647"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <readerQuotas maxDepth="2147483647" maxStringContentLength="2147483647"
+                        maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647" />
                 </binding>
+                <binding name="TestSoap" />
             </basicHttpBinding>
             <customBinding>
                 <binding name="ICTEnterprisesSoap12">
-                    <textMessageEncoding messageVersion="Soap12"/>
-                    <httpTransport/>
+                    <textMessageEncoding messageVersion="Soap12" />
+                    <httpTransport />
                 </binding>
             </customBinding>
         </bindings>
         <client>
-            <endpoint address="http://222.189.4.146:8098/ICTEnterprises.asmx" binding="basicHttpBinding" bindingConfiguration="ICTEnterprisesSoap" contract="sendmessage.ICTEnterprisesSoap" name="ICTEnterprisesSoap"/>
-            <endpoint address="http://218.92.115.32/YhService/YhService.asmx" binding="basicHttpBinding" bindingConfiguration="Service1Soap1" contract="lygport_outside.Service1Soap" name="Service1Soap"/>
+            <endpoint address="http://222.189.4.146:8098/ICTEnterprises.asmx"
+                binding="basicHttpBinding" bindingConfiguration="ICTEnterprisesSoap"
+                contract="sendmessage.ICTEnterprisesSoap" name="ICTEnterprisesSoap" />
+            <endpoint address="http://218.92.115.32/YhService/YhService.asmx"
+                binding="basicHttpBinding" bindingConfiguration="Service1Soap1"
+                contract="lygport_outside.Service1Soap" name="Service1Soap" />
+            <endpoint address="http://222.189.4.146:20820/TEST.asmx" binding="basicHttpBinding"
+                bindingConfiguration="TestSoap" contract="LOADTRUCKLIST.TestSoap"
+                name="TestSoap" />
         </client>
     </system.serviceModel>
 </configuration>

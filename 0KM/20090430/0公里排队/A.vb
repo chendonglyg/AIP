@@ -658,6 +658,10 @@
                 objdataadapter.SelectCommand.Parameters.AddWithValue("@chehao", Trim(chehao.Text))
                 objdataadapter.SelectCommand.Parameters.AddWithValue("@dianhuahaoma", Trim(dianhuahaoma.Text))
 
+                '-----------------------------------20180412添加修改司机姓名和二代证号码
+                objdataadapter.SelectCommand.Parameters.AddWithValue("@sijiname", Trim(sijiname.Text))
+                objdataadapter.SelectCommand.Parameters.AddWithValue("@sijiID", Trim(sijiID.Text))
+
                 If objconnection.State = ConnectionState.Closed Then
                     objconnection.Open()
                 End If
@@ -840,6 +844,10 @@
         isReserved.Checked = kedengji.Rows(e.RowIndex).Cells(32).Value
         Reservedtime1.Text = kedengji.Rows(e.RowIndex).Cells(33).Value
         Reservedtime2.Text = kedengji.Rows(e.RowIndex).Cells(34).Value
+
+        sijiname.Text = kedengji.Rows(e.RowIndex).Cells(40).Value
+        sijiID.Text = kedengji.Rows(e.RowIndex).Cells(41).Value
+
     End Sub
 
     Private Sub kedengji_CellFormatting1(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles kedengji.CellFormatting
